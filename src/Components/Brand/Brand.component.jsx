@@ -1,8 +1,7 @@
-import React from 'react';
 import { google, slack, atlassian, dropbox, shopify } from './imports';
 import './Brand.styles.css';
 
-export function Brand() {
+function Brand() {
   return (
     <div className="gpt3__brand section__padding">
       <div>
@@ -24,4 +23,4 @@ export function Brand() {
   );
 }
 
-// export default Brand;
+export default Brand;
