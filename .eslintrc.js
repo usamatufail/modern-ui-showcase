@@ -16,9 +16,13 @@ module.exports = {
       jsx: true,
     },
     ecmaVersion: 2018,
+    requireConfigFile: false,
     sourceType: 'module',
+    babelOptions: {
+      presets: ['@babel/preset-react'],
+    },
   },
-  parser: 'babel-eslint',
+  parser: '@babel/eslint-parser',
   plugins: [
     'react',
   ],
@@ -26,6 +30,7 @@ module.exports = {
     'import/extensions': 0,
     'react/prop-types': 0,
     'linebreak-style': 0,
+    'react/react-in-jsx-scope': 0,
     'react/state-in-constructor': 0,
     'import/prefer-default-export': 0,
     'max-len': [

@@ -1,6 +1,6 @@
 import './App.css';
 import { Header } from './Containers';
-import { Navbar } from './Components';
+import { Navbar, Brand } from './Components';
 
 function App() {
   return (
@@ -9,6 +9,7 @@ function App() {
         <Navbar />
         <Header />
       </div>
+      <Brand />
     </div>
   );
 }

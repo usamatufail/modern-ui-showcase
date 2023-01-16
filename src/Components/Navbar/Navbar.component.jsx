@@ -3,7 +3,7 @@ import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import logo from '../../logo.svg';
 import './Navbar.styles.css';
 
-const Navbar = () => {
+function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
@@ -68,6 +68,6 @@ const Navbar = () => {
       </div>
     </div>
   );
-};
+}
 
 export default Navbar;
